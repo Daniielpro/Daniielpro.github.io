@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>QSMN</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function CuandoDigaSi(){
+            rsp1 = "Atrapada...!!!!";
+            rsp2 = "♥ Ya no puedes huir, niña mimada ♥";
+            rsp3 = "Pdta: No se permite devoluciones.";
+            document.getElementById("lblResultado").innerHTML = rsp1;
+            document.getElementById("lblResultado1").innerHTML = rsp2;
+            document.getElementById("lblResultado2").innerHTML = rsp3;
+            
+        }
+        function CuandoDigaNo(){
+            ancho = window.innerWidth;
+            alto = window.innerHeight;
+
+            x = (Math.random() * ancho) + "px";
+            y = (Math.random() * alto) + "px";
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = x;
+            document.getElementById('btnNo').style.top = y;
+        }
+    </script>
+</head>
+<body>
+    <h1>¿Te Gustaria ser mi Caos Total?</h1>
+    <img src="2.png" width="180">
+    <a id="btnSi" onclick="CuandoDigaSi()">SI</a>
+    <a id="btnNo" onmouseover="CuandoDigaNo()">NO</a>
+    <img src="4.png" width="180">
+    <p id="lblResultado"></p>
+    <p id="lblResultado1"></p>
+    <p id="lblResultado2"></p>
+    <img src="3.png" width="180">
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient(to right, #cca1d9, #f6ab9b);
+    text-align: center;
+}
+body a{
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 20%;
+    background-color: #f6ab9b;
+    color: white;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+body p{
+    color: white;
+    font-size: 40px;
+}
+body h1{
+    color: white;
+    background-color: #f0a0ba;
+    font-size: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    box-shadow: 3px 3px #f0b490, 5px 0 1em #e5be8c;
+}
